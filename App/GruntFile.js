@@ -1,6 +1,5 @@
-np
+
 /***********[ Testing and running grunt! ]************
-Dundermiff menu:
  *  'grunt test' : Runs jshint, starts a local nodemon using server.js
  *  'grunt test -testOnline' :  Runs jshint, concats and uglifies and mins your files, pushes to heroku-test1.
                                 Opens the app in a new chrome windows, and shows you logs in shell.
@@ -114,15 +113,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-nodemon');
 
-    grunt.registerTask('testLocal', [
-        'jshint', 'shell:localServer'
-    ]);
-
     grunt.registerTask('build', [
         'shell:clean', 'jshint', 'concat', 'uglify', 'cssmin'
     ]);
 
-    grunt.registerTask('scrumMaster', [
+    grunt.registerTask('scrummaster', [
         'shell:herokuDeployPush', 'shell:herokuDeployOpen', 'shell:herokuDeployLogs'
     ]);
 
@@ -133,19 +128,15 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('test', function() {
-        if (grunt.option('testOnline')) {
+        if (grunt.option('testonline')) {
             grunt.task.run(['build']);
-            grunt.task.run(['testOnline']);
+            grunt.task.run(['testonline']);
 
-        } else if (grunt.option('scrumMaster')) {
+        } else if (grunt.option('scrummaster')) {
             grunt.task.run(['build']);
-            grunt.task.run(['scrumMaster']);
+            grunt.task.run(['scrummaster']);
 
-        } else {
-            grunt.task.run(['testLocal']);
-        }
+        } 
     });
 
-}; // end of gruntfile
-Status API Training Shop Blog About Pricing
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
+}; 

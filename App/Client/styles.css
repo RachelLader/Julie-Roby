@@ -15,7 +15,7 @@
 }
 
 #registered {
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 200px;
     position: absolute;
     width: 400px;
@@ -30,6 +30,8 @@
     background-image: url("julregistry.jpg");
     width: 101%;
     height: 500px;
+    margin-left: -10px;
+    margin-right: -10px;
     background-size: 100%;
     background-position-y: 50%;
     z-index: -5;
@@ -45,6 +47,8 @@
     background-color: white;
     height: 70px;
     width: 101%;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 h1 {
