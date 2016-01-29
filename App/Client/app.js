@@ -10,7 +10,7 @@ angular.module('weddingApp', [
 
   $stateProvider
     .state('home', {
-        url: "/home",
+        url: "/",
         controller: 'MainController',
         templateUrl: './Views/home.html'
     })
