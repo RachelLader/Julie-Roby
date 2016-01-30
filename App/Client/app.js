@@ -18,6 +18,11 @@ angular.module('weddingApp', [
         url:"/registry",
         controller:"MainController",
         templateUrl:'./Views/registry.html'
-    });
+    })
+    .state('story',{
+      url:"/ourstory",
+      controller:"MainController",
+      templateUrl:'./Views/story.html'
+    })
 
 }]);
