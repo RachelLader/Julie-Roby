@@ -9,6 +9,23 @@
     position: fixed;
 }
 
+#hotel{
+     overflow-y: hidden;
+    background-size: 100%;
+    height: 1000px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -30px;
+    width: 101%;
+    z-index:-10;
+    position: fixed;
+    background-position-y: 50%;
+    background-image: url('jul3.jpg');
+}
+
+#hotelLink{
+    color: #00e6b8 ;
+}
 
 #registryTitle {
     left: 70%;
@@ -52,6 +69,25 @@ strong {
     opacity: .6;
     background-color: white;
 }
+
+.HotelInfo,li{
+    margin-left: 25px;
+}
+
+.hotelInfo {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    margin-left: 10px;
+    font-size: 20px;
+    top: 20%;
+    height: 600px;
+    overflow: auto;
+    opacity: .8;
+    text-align: left;
+    background-color: white;
+}
+
 #story {
     background-image: url("sideBySide.jpg");
     overflow-y: hidden;

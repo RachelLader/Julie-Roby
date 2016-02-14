@@ -24,5 +24,10 @@ angular.module('weddingApp', [
       controller:"MainController",
       templateUrl:'./Views/story.html'
     })
+    .state('hotel',{
+      url:"/hotel",
+      controller:"MainController",
+      templateUrl:'./Views/hotel.html'
+    })
 
 }]);

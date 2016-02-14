@@ -1,30 +1,22 @@
 {
-  "name": "JulieandRob",
+  "name": "Julie&Rob",
   "version": "1.0.0",
   "description": "Julie's wedding website",
   "main": "server/server.js",
-  "license": "MIT",
   "engines": {
     "node": "4.2.1",
     "npm": "2.14.7"
   },
   "dependencies": {
-    "body-parser": "^1.14.2",
+    "body-parser": "^1.14.1",
     "bower": "^1.3.1",
     "cookie-parser": "^1.4.0",
     "express": "^4.13.3",
     "express-session": "^1.12.1",
-    "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-cssmin": "^0.14.0",
-    "grunt-contrib-jshint": "^0.12.0",
-    "grunt-contrib-uglify": "^0.11.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-nodemon": "^0.4.1",
-    "grunt-shell": "^1.1.2",
     "lodash": "^3.10.1",
     "moment": "^2.10.6",
     "request": "^2.65.0"
-  }
+  },
+  "license": "MIT"
 }
